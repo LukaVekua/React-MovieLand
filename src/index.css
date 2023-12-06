@@ -1,0 +1,12 @@
+/* bold font for movie titles : font-family: 'Young Serif', serif; */
+body {
+  margin: 0;
+  font-family: 'Mooli', sans-serif;
+
+}
+
+
+
+html {
+  scroll-behavior: smooth;
+}

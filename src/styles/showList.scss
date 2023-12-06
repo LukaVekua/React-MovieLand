@@ -1,0 +1,46 @@
+.list-box {
+    width: 90%;
+    margin: 1.5rem auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 15px;
+
+
+}
+
+.page-navigations {
+    width: 50%;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+
+
+    .inactive {
+        padding: 10px;
+        font-size: 1.5rem;
+        color: rgba(229, 8, 20);
+        cursor: pointer;
+        font-weight: 600;
+    }
+
+    .active {
+        padding: 10px;
+        font-size: 2rem;
+        color: white;
+        cursor: pointer;
+        font-weight: 600;
+
+    }
+}
+
+.icon {
+    width: 1.6rem;
+    height: 1.6rem;
+
+
+}

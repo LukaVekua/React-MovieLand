@@ -1,0 +1,147 @@
+#login-main {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../assets/banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+
+    #login-overlay {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.3);
+        z-index: 1;
+    }
+
+    .login-box {
+        background-color: rgba(0, 0, 0, 0.8);
+        border-radius: 7px;
+        width: 25%;
+        height: 70vh;
+        margin: auto auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        z-index: 5;
+
+        header {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            h2 {
+                color: white;
+                font-size: 2rem;
+            }
+        }
+
+        .inputs {
+            width: 100%;
+            height: 30%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            gap: 10px;
+
+            .input-box {
+                width: 100%;
+                height: 50%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 15px;
+
+                span {
+                    color: #a39a9a;
+                    font-size: 1rem;
+                    align-self: flex-start;
+                    margin-left: 2.5rem;
+                }
+            }
+
+            input {
+                width: 80%;
+                height: 100%;
+                font-size: 1.5rem;
+                border: 1px solid #a39a9a;
+                background-color: rgba(0, 0, 0, 0.3);
+                color: white;
+                border-radius: 7px;
+            }
+        }
+
+        .login-actions {
+            width: 80%;
+            margin: 1rem auto;
+            display: flex;
+            flex-direction: column;
+
+            button {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 10px;
+                background-color: #e50914;
+                color: white;
+            }
+
+            .corrections {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                color: #a39a9a;
+            }
+        }
+
+        footer {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h3 {
+                color: #a39a9a;
+
+                a {
+                    color: white;
+                    text-decoration: none;
+                }
+            }
+
+            .footer-span {
+                color: #a39a9a;
+                width: 90%;
+                font-size: .9rem;
+            }
+
+            .test-info {
+                margin-top: 1rem;
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                gap: 10px;
+
+                span {
+                    color: #a39a9a;
+                    font-size: 1rem;
+                    font-weight: 600;
+                    color:red;
+                    font-weight:bold;
+                    font-size:19px;
+                }
+            }
+
+
+        }
+    }
+}

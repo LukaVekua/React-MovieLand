@@ -1,0 +1,131 @@
+.profile-page {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    z-index: 6;
+
+
+    .my-list {
+        width: 100%;
+        height: 100%;
+        z-index: 8;
+
+
+        .empty-list {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        .show-container.slide {
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            z-index: 100;
+
+            #list-actions {
+                z-index: 100;
+                width: 60%;
+                height: 3rem;
+                display: flex;
+                align-items: center;
+
+                button {
+                    border: none;
+                    background: none;
+                    margin-left: 3rem;
+
+                    &:hover {
+                        box-shadow: 5px 10px 10px #e50914;
+                        scale: 1.1;
+                    }
+
+                    img {
+                        width: 2.5rem;
+                        height: 2.5rem;
+                    }
+                }
+
+            }
+
+            #slide-overlay {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                background-color: rgba(0, 0, 0, 0.6);
+            }
+
+            #details {
+                z-index: 5;
+            }
+
+
+            .show-details {
+                width: 60%;
+                display: flex;
+                flex-direction: column;
+                height: 70%;
+                margin-left: 3rem;
+                z-index: 100;
+                margin-top: 2.5rem;
+                z-index: 5;
+
+
+                #deep {
+                    width: 100%;
+                    z-index: 100;
+
+                    p {
+                        font-family: Georgia, 'Times New Roman', Times, serif;
+                        font-size: 1.4rem;
+                        font-style: italic;
+                        color: white;
+                        width: 80%;
+                    }
+                }
+
+                .show-header {
+                    z-index: 3;
+                }
+
+                #title {
+                    color: white;
+                    font-size: 3.5rem;
+                    z-index: 100;
+                }
+
+                #genre {
+                    font-size: 1.7rem;
+                    font-weight: 600;
+                    z-index: 100;
+                }
+
+                #extra {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    z-index: 100;
+
+                    span {
+                        font-size: 1.6rem;
+                        display: flex;
+                        align-items: center;
+                        color: #a39a9a;
+
+                        img {
+                            margin-right: 10px;
+                            width: 1.5rem;
+                            height: 1.5rem;
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+}

@@ -1,0 +1,111 @@
+.advanced-filter-container {
+    width: 90%;
+    margin: 0rem auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    #sorter-box {
+        width: 30%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 10px;
+
+        #header {
+            color: white;
+            font-size: 1.2rem;
+        }
+
+        .filter-active {
+            padding: 11px 25px;
+            border-radius: 50px;
+            background-color: rgb(229, 9, 20);
+            color: white;
+            border: none;
+            font-size: 1rem;
+            cursor: pointer;
+
+            &::-webkit-scrollbar {
+                width: 10px;
+            }
+
+            /* Track */
+            &::-webkit-scrollbar-track {
+                background: #f1f1f1;
+            }
+
+            /* Handle */
+            &::-webkit-scrollbar-thumb {
+                background: #888;
+                height: 10px;
+            }
+
+
+            /* Handle on hover */
+            &::-webkit-scrollbar-thumb:hover {
+                background: rgb(229, 9, 20);
+
+            }
+        }
+
+        .filter-inactive {
+            padding: 11px 25px;
+            border-radius: 50px;
+            background-color: rgb(44, 42, 42);
+            color: white;
+            border: none;
+            font-size: 1rem;
+            cursor: pointer;
+
+            &::-webkit-scrollbar {
+                width: 10px;
+            }
+
+            /* Track */
+            &::-webkit-scrollbar-track {
+                background: #f1f1f1;
+            }
+
+            /* Handle */
+            &::-webkit-scrollbar-thumb {
+                background: #888;
+                height: 10px;
+            }
+
+
+            /* Handle on hover */
+            &::-webkit-scrollbar-thumb:hover {
+                background: rgb(229, 9, 20);
+
+            }
+        }
+
+
+    }
+
+    #rate-box {
+        width: 25%;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        justify-content: flex-end;
+        margin-left: 1rem;
+
+        img {
+            width: 1.3rem;
+            height: 1.3rem;
+        }
+
+        input {
+            width: 50%;
+            accent-color: #FFC107;
+        }
+
+        span {
+            font-weight: 600;
+            font-size: 1.2rem;
+        }
+    }
+}
